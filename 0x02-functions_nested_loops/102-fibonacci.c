@@ -16,7 +16,7 @@ int main(void)
 	sec_count = 2;
 	n = 50;
 
-	for (i = 0; i < n; i++)
+	for (i = 1; i < n; i++)
 	{
 		if (i == 1)
 		{
