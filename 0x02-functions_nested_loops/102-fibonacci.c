@@ -1,15 +1,10 @@
-#include<stdio.h>
-int fib(int n)
-{
-   if (n <= 1)
-      return n;
-   return fib(n-1) + fib(n-2);
-}
- 
-int main ()
-{
-  int n = 9;
-  printf("%d", fib(n));
-  getchar();
-  return 0;
-}
+#include <stdio.h>
+int f0=0; 
+int f1=1; 
+for(int i=1;i<=50;i++) 
+{ 
+  printf(“%d\n”, f1); 
+  int f2=f1+f0; 
+  f0=f1; 
+  f1=f2; 
+} 
