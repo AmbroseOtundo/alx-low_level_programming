@@ -1,31 +1,51 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- * print_times_table - Entry point
- * @n: input
- * Return: Always 0 (Success)
+ * print_times_table - prints the times table up to the integer input
+ * @n: integer input
+ *
+ * Return: void
  */
+
 void print_times_table(int n)
-void main()
 {
-   int j,i,n;
-   printf("Input upto the table number starting from 1 : ");
-   scanf("%d",&n);
-   printf("Multiplication table from 1 to %d \n",n);
-   for(i=1;i<=10;i++)
-   {
-     for(j=1;j<=n;j++)
-     {
-       if (j<=n-1)
-           printf("%dx%d = %d, ",j,i,i*j);
-          else
-	    printf("%dx%d = %d",j,i,i*j);
+	int a, b, c, d, e, f;
 
-      }
-     printf("\n");
-    }
-} 
-{
-
-	return (0);
+	if (n >= 0 && n < 15)
+	{
+		for (a = 0; a <=  n; a++)
+		{
+			for (b = 0; b <= n; b++)
+			{
+				c = a * b; d = c / 100; e = (c /  10) % 10;
+				f = (c % 100) % 10;
+				if (b == 0)
+				{
+					_putchar('0');
+				}
+				else if (c < 10)
+				{
+					_putchar(' '); _putchar(' ');
+					_putchar('0' + f);
+				}
+				else if (c < 100)
+				{
+					_putchar(' ');
+					_putchar('0' + e); _putchar('0' + f);
+				}
+				else
+				{
+					_putchar('0' + d);
+					_putchar('0' + e);
+					_putchar('0' + f);
+				}
+				if (b < n)
+				{
+					_putchar(','); _putchar(' ');
+				}
+				else
+					_putchar('\n');
+			}
+		}
+	}
 }
