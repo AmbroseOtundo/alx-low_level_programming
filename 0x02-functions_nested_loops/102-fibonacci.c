@@ -16,7 +16,7 @@ int main(void)
 	sec_count = 2;
 	n = 50;
 
-	for (i = 1; i < n; i++)
+	for (i = 0; i < n; i++)
 	{
 		if (i == 1)
 		{
@@ -27,7 +27,7 @@ int main(void)
 			printf("%d, ", first_count);
 			next_num = first_count + sec_count;
 			first_count = sec_count;
-			sec_count = next_num;
+			/*sec_count = next_num;*/
 		}
 	}
 	printf("\n");
