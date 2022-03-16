@@ -11,9 +11,7 @@ int main(void)
 	while (*c !=  '\0')
 	{
 		_putchar(*c);
-	
 	}
 	_putchar('\n');
-
-	return (0);
+         return (0);
 }
