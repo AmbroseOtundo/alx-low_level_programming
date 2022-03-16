@@ -27,7 +27,7 @@ int main(void)
 			printf("%d, ", first_count);
 			next_num = first_count + sec_count;
 			first_count = sec_count;
-			/*sec_count = next_num;*/
+			sec_count = next_num;
 		}
 	}
 	printf("\n");
