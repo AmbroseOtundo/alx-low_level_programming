@@ -1,1 +1,1 @@
-debugging Readme file (new)
+Strings, arrays and pointers Readme file (new)
