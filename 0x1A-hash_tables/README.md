@@ -1,4 +1,4 @@
-# 0x19. C - Hash tables
+0x1A-hash_tables
 ## About
 An introductory project on:
 - Hash functions
